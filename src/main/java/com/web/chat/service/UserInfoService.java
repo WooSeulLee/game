@@ -1,5 +1,7 @@
 package com.web.chat.service;
 
+import java.util.List;
+
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +21,9 @@ public class UserInfoService {
 			session.setAttribute("user", loginUser);
 		}
 		return loginUser;
+	}
+	public List<UserInfoVO> checkId(String uiId) {
+		return uiMapper.checkId(uiId);
 	}
 	public int insertUser(UserInfoVO user) {
 		return uiMapper.insertUser(user);
