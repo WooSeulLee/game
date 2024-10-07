@@ -3,7 +3,7 @@
 <mapper namespace="com.web.chat.mapper.UserInfoMapper">
 	<select id="selectUserForLogin" resultType="com.web.chat.vo.UserInfoVO">
 		SELECT * FROM user_info 
-		WHERE USI_ID = #{uiId} AND USI_PWD = #{uiPwd};
+		WHERE UI_ID = #{uiId} AND UI_PWD = #{uiPwd};
 	</select>
 	<insert id="insertUser">
 		INSERT INTO user_info (
