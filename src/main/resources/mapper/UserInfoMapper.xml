@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.web.chat.common.mapper.UserInfoMapper">
+<mapper namespace="com.web.chat.mapper.UserInfoMapper">
 	<select id="selectUserForLogin" resultType="com.web.chat.vo.UserInfoVO">
 		SELECT * FROM user_info 
 		WHERE USI_ID = #{uiId} AND USI_PWD = #{uiPwd};
