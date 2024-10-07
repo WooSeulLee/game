@@ -19,7 +19,7 @@ logging:
     '[com.shop.fruitable.mapper]' : TRACE
   
 server:
-  port: 8005
+  port: 80
 mybatis:
   mapper-locations: mapper/**/*.xml
   configuration:
