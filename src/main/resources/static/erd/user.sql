@@ -1,0 +1,35 @@
+CREATE DATABASE `one`
+
+DROP TABLE IF EXISTS USER_INFO;
+
+CREATE TABLE USER_INFO
+(
+	UI_NUM int NOT NULL AUTO_INCREMENT,
+	UI_NAME varchar(30) NOT NULL,
+	UI_ID varchar(30) NOT NULL,
+	UI_PWD varchar(30) NOT NULL,
+	UI_WIN int,
+	UI_TOTAL int,
+	CREDAT CHAR(8) DEFAULT DATE_FORMAT (NOW(), '%Y%m%d'),
+	CRETIM CHAR(6) DEFAULT DATE_FORMAT (NOW(), '%H%i%s'),
+	PRIMARY KEY (UI_NUM)
+);
+
+SELECT * FROM user_info;
+
+SELECT * FROM user_info WHERE ui_num = 1;
+
+INSERT INTO user_info (
+UI_NAME, UI_ID, UI_PWD, UI_WIN, UI_TOTAL
+) VALUES(
+'홍길동','hong','asdfasdf123',0,0
+);
+
+
+INSERT INTO user_info (
+UI_NAME, UI_ID, UI_PWD, UI_WIN, UI_TOTAL
+) VALUES(
+'테스트','test','test',0,0
+);
+
+
